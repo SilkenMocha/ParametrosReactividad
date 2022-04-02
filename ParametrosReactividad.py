@@ -6,13 +6,13 @@ st.title("Parámetros de reactividad")
 
 st.write("Bienvenido. Este programa te calculara parámetros de reactividad")
 
-ht = input("Hartress: ")
-ht0 = input("Hartress 0: ")
-#ht-1 = input ("Hartress -1: ")
-#ht+1 = input("Hartress +1: ")
-st.write: Nucleofilicidad
-homo = input("HOMO:")
-lumo = INPUT("LUMO: ")
+ht = st.text_input("Hartress: ")
+ht0 = st.text_input("Hartress 0: ")
+#ht-1 = st.text_input("Hartress -1: ")
+#ht+1 = st.text_input("Hartress +1: ")
+st.write("Nucleofilicidad")
+homo = st.text_input("HOMO:")
+lumo = st.text_input("LUMO: ")
 
 #INPUTS
 #Hartrees
