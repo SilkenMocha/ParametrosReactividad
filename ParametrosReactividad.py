@@ -6,13 +6,32 @@ st.title("Parámetros de reactividad")
 
 st.write("Bienvenido. Este programa te calculara parámetros de reactividad")
 
+st.subheader('Hartress')
 ht = st.text_input("Hartress: ")
 ht0 = st.text_input("Hartress 0: ")
-#ht-1 = st.text_input("Hartress -1: ")
-#ht+1 = st.text_input("Hartress +1: ")
+ht1p = st.text_input("Hartress -1: ")
+ht1m = st.text_input("Hartress +1: ")
 st.subheader('Nucleofilicidad')
 homo = st.text_input("HOMO:")
 lumo = st.text_input("LUMO: ")
+
+#operaciones
+eV_h0 = ht*27.2116
+eV_h1p = ht1+*27.2116
+eV_h1m = ht1-*27.2116
+kcal_h0 = 627.5*ht0
+kcal_h1p = 627.5*ht1p
+kcal_hm = 627.5*ht1m
+
+st.write("eV_h0")
+st.write("eV_h1p")
+st.write("eV_h1m")
+st.write("kcal_h0")
+st.write("kcal_h1p")
+st.write("kcal_h1m")
+
+
+
 
 #INPUTS
 #Hartrees
