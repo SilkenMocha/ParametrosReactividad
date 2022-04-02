@@ -11,8 +11,8 @@ ht0 = st.text_input("Hartress 0: ")
 #ht-1 = st.text_input("Hartress -1: ")
 #ht+1 = st.text_input("Hartress +1: ")
 st.subheader('Nucleofilicidad')
-    homo = st.text_input("HOMO:")
-    lumo = st.text_input("LUMO: ")
+homo = st.text_input("HOMO:")
+lumo = st.text_input("LUMO: ")
 
 #INPUTS
 #Hartrees
