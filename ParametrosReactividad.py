@@ -11,7 +11,8 @@ ht0 = input("Hartress 0: ")
 #ht-1 = input ("Hartress -1: ")
 #ht+1 = input("Hartress +1: ")
 st.write: Nucleofilicidad
-nc = input("Nucleofilicidad:")
+homo = input("HOMO:")
+lumo = INPUT("LUMO: ")
 
 #INPUTS
 #Hartrees
