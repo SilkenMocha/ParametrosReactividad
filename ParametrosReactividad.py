@@ -17,8 +17,8 @@ lumo = st.text_input("LUMO: ")
 
 #operaciones
 eV_h0 = ht*27.2116
-eV_h1p = ht1+*27.2116
-eV_h1m = ht1-*27.2116
+eV_h1p = ht1p*27.2116
+eV_h1m = ht1m*27.2116
 kcal_h0 = 627.5*ht0
 kcal_h1p = 627.5*ht1p
 kcal_hm = 627.5*ht1m
