@@ -16,19 +16,20 @@ homo = st.text_input("HOMO:")
 lumo = st.text_input("LUMO: ")
 
 #operaciones
-eV_h0 = ht*27.2116
-eV_h1p = ht1p*27.2116
-eV_h1m = ht1m*27.2116
-kcal_h0 = 627.5*ht0
-kcal_h1p = 627.5*ht1p
-kcal_hm = 627.5*ht1m
+#eV_h0 = ht*27.2116
+#eV_h1p = ht1p*27.2116
+#eV_h1m = ht1m*27.2116
+#kcal_h0 = 627.5*ht0
+#kcal_h1p = 627.5*ht1p
+#kcal_hm = 627.5*ht1m
 
-st.write("eV_h0")
-st.write("eV_h1p")
-st.write("eV_h1m")
-st.write("kcal_h0")
-st.write("kcal_h1p")
-st.write("kcal_h1m")
+st.write("ht*27.2116")
+#st.write("eV_h10")
+#st.write("eV_h1p")
+#st.write("eV_h1m")
+#st.write("kcal_h0")
+#st.write("kcal_h1p")
+#st.write("kcal_h1m")
 
 
 
