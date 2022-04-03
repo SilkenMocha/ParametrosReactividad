@@ -23,7 +23,7 @@ lumo = st.text_input("LUMO: ")
 #kcal_h1p = 627.5*ht1p
 #kcal_hm = 627.5*ht1m
 
-st.write("ht*27.2116")
+st.write(ht*27.2116)
 #st.write("eV_h10")
 #st.write("eV_h1p")
 #st.write("eV_h1m")
