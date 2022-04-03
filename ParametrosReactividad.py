@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import math as math
+import math 
 
 st.title("Parámetros de reactividad")
 
