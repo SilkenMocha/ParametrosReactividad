@@ -5,7 +5,13 @@ import math
 st.title("Parámetros de reactividad")
 
 st.write("Bienvenido. Este programa te calculara parámetros de reactividad")
-st.button('hola')
+
+if st.button('Calcular'):
+    eV0 = float(ht0)* 27.2116
+    eVp = float(ht1p) * 27.2116
+    eVm = float(ht1m) * 27.2116
+    eV()
+
 st.subheader('Hartress')
 ht = st.text_input("Hartress: ")
 ht0 = st.text_input("Hartress 0: ")
@@ -25,11 +31,7 @@ ht1p = input("Hartress +1: ")
 ht1m = input("Hartress -1: ")
 st.button('hola')
 
-if st.button('Calcular'):
-    eV0 = float(ht0)* 27.2116
-    eVp = float(ht1p) * 27.2116
-    eVm = float(ht1m) * 27.2116
-    eV()
+
 #if next == true:
  #  eV0 = float(ht0) * 27.2116
   # eVp = float(ht1p) * 27.2116
