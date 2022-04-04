@@ -10,7 +10,9 @@ if st.button('Calcular'):
     eV0 = float(ht0)* 27.2116
     eVp = float(ht1p) * 27.2116
     eVm = float(ht1m) * 27.2116
-    eV()
+    st.write("\neV 0: " + str(eV0))
+    st.write("eV -1: " + str(eVp))
+    st.write("eV +1: " + str(eVm) + "\n")
 
 st.subheader('Hartress')
 ht = st.text_input("Hartress: ")
@@ -38,10 +40,10 @@ st.button('hola')
    #eVm = float(ht1m) * 27.2116
    #eV()
 
-def eV():
-    st.write("\neV 0: " + str(eV0))
-    st.write("eV -1: " + str(eVp))
-    st.write("eV +1: " + str(eVm) + "\n")
+#def eV():
+    #st.write("\neV 0: " + str(eV0))
+    #st.write("eV -1: " + str(eVp))
+    #st.write("eV +1: " + str(eVm) + "\n")
 
 
 #Hartress en eV
