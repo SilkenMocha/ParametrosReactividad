@@ -23,7 +23,7 @@ ht = input("Hartress: ")
 ht0 = input("Hartress 0: ")
 ht1p = input("Hartress +1: ")
 ht1m = input("Hartress -1: ")
-
+st.button("hola")
 next = st.button("Siguiente")
 
 #if next == true:
