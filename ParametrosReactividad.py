@@ -33,9 +33,9 @@ if next = true:
    eV()
 
 def eV():
-    print("\neV 0: " + str(eV0))
-    print("eV -1: " + str(eVp))
-    print("eV +1: " + str(eVm) + "\n")
+    st.write("\neV 0: " + str(eV0))
+    st.write("eV -1: " + str(eVp))
+    st.write("eV +1: " + str(eVm) + "\n")
 
 
 #Hartress en eV
