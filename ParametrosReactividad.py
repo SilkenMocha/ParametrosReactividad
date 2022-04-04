@@ -14,57 +14,81 @@ ht1m = st.text_input("Hartress +1: ")
 st.subheader('Nucleofilicidad')
 homo = st.text_input("HOMO:")
 lumo = st.text_input("LUMO: ")
+    
+print("PARÁMETROS DE REACTIVIDAD")
+print("Bienvenido. Este programa te calculara parámetros de reactividad\n")
+print('HARTRESS')
 
-#operaciones
-#eV_h0 = ht*27.2116
-#eV_h1p = ht1p*27.2116
-#eV_h1m = ht1m*27.2116
-#kcal_h0 = 627.5*ht0
-#kcal_h1p = 627.5*ht1p
-#kcal_hm = 627.5*ht1m
+ht = input("Hartress: ")
+ht0 = input("Hartress 0: ")
+ht1p = input("Hartress +1: ")
+ht1m = input("Hartress -1: ")
 
-st.write('ht*27.2116')
-#st.write("eV_h10")
-#st.write("eV_h1p")
-#st.write("eV_h1m")
-#st.write("kcal_h0")
-#st.write("kcal_h1p")
-#st.write("kcal_h1m")
+next = st.button("Siguiente")
 
+if next = true
+   eV0 = float(ht0) * 27.2116
+   eVp = float(ht1p) * 27.2116
+   eVm = float(ht1m) * 27.2116
 
+#Hartress en eV
+#eV0 = float(ht0) * 27.2116
+#eVp = float(ht1p) * 27.2116
+#eVm = float(ht1m) * 27.2116
 
+#def eV():
+#    print("\neV 0: " + str(eV0))
+#    print("eV -1: " + str(eVp))
+#    print("eV +1: " + str(eVm) + "\n")
+#eV()
 
-#INPUTS
-#Hartrees
-    #Hartress
-    #Cargas (0, +1, -1)
-#Nucleofilicidad
-    #HOMO, LUMO 
+#def kcal():
+#    print("kCal/mol 0: : " + str(float(ht0)*627.5))
+#    print("kCal/mol +1: " + str(float(ht1p) * 627.5))
+#    print("kCal/mol -1: " + str(float(ht1m) * 627.5) + "\n")
+#kcal()
 
+#def aprox_E():
+#    A = eV0-eVm
+#    I = eVp - eV0
+#    print("APROXIMACIÓN DE ENERGÍAS")
+#    print("Afinidad electrónica: " + str(A))
+#    print("Potencial de ionización: " + str(I) + "\n")
 
-#OUTPUTS
-    #eV(E) = Hartress*27.2116
-    #kCal/mol = Hartress*627.5
-#eV (E)
-    #0=27.21226*(c0,c+1,c-1   
-#Aproximación de energías
-    #E(0)- E(-1) = Afinidad electrónica (A)
-    # E(+) - E(0) = Potencial de ionización (I)
+#    n = (I-A)/2
+#    u = (I+A)/2
+#    w = pow(u,2)/(2*n)
+#    print("Dureza: " + str(n))
+#    print("Electronegatividad: " + str(u))
+#    print("Electrofilicidad: " + str(w) + "\n")
+#aprox_E()
 
-    #(I-A)/2 Dureza(n)
-    #(I+A)/2 Electronegatividad (u)
-    # w = u^2/2n Electrofilicidad (w)
-#Aproximación orbital
-    #E_HOMO, E_LUMO
-    #A = -ELUMO*27 Afinidad electrónica
-    #I = -E HOMO*27 Potencial de ionización
+#e_homo = float(input("E HOMO: "))
+#e_lumo = float(input("E LUMO: "))
 
-    #(I-A)/2 Dureza (n)
-    #(I+A)/2 Electronegatividad (u)
-    #w = u^2/2n Electrofilicidad (w)
+#def aprox_orb():
+#    print("\nAPROXIMACIÓN ORBITAL")
+#    A = -27*e_lumo #Afinidad electrónica
+#    I = -27*e_homo #Potencial de ionización
+#    print("Afinidad electrónica: " + str(A))
+#    print("Potencial de ionización: " + str(I))
 
-#HOMO(O), LUMO(V)
-    #GAP(Hartress) = LUMO(V)-HOMO(O)
+#    n = (I - A) / 2
+#    u = (I + A) / 2
+#    w = pow(u, 2) / (2 * n)
+#    print("Dureza: " + str(n))
+#    print("Electronegatividad: " + str(u))
+#    print("Electrofilicidad: " + str(w) + "\n")
+
+#    homo_o = float(input("HOMO(O): "))
+#    lumo_o = float(input("LUMO(V): "))
+#    gap = lumo_o - homo_o
+#    gap_eV = gap*27.2116
+#    print("GAP: " + str(gap))
+#    print("GAP (eV): " + str(gap_eV))
+
+#st.write('ht*27.2116')
+
 
 
 #st.write("Hola mundo")
