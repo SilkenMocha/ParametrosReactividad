@@ -20,12 +20,12 @@ lumo_o = st.number_input("LUMO (V): ")
 
 if st.button('Calcular'):
   eV0 = ht0 * 27.2116
-  eV1p = ht1p * 27.2116
-  eV1m = ht1m * 27.2116
+  eVp = ht1p * 27.2116
+  eVm = ht1m * 27.2116
   
   kcal = str(ht*627.5)
 
-  A = eV0-eV1m
+  A = eV0-eVm
   I = eVp - eV0
 
   n = (I-A)/2
