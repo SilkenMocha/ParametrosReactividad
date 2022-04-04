@@ -23,9 +23,9 @@ st.subheader('Nucleofilicidad')
 homo = st.text_input("HOMO:")
 lumo = st.text_input("LUMO: ")
     
-print("PARÁMETROS DE REACTIVIDAD")
-print("Bienvenido. Este programa te calculara parámetros de reactividad\n")
-print('HARTRESS')
+#print("PARÁMETROS DE REACTIVIDAD")
+#print("Bienvenido. Este programa te calculara parámetros de reactividad\n")
+#print('HARTRESS')
 
 ht = input("Hartress: ")
 ht0 = input("Hartress 0: ")
@@ -35,8 +35,8 @@ st.button('hola')
 
 
 #if next == true:
- #  eV0 = float(ht0) * 27.2116
-  # eVp = float(ht1p) * 27.2116
+   #eV0 = float(ht0) * 27.2116
+   #eVp = float(ht1p) * 27.2116
    #eVm = float(ht1m) * 27.2116
    #eV()
 
