@@ -27,11 +27,11 @@ lumo = st.text_input("LUMO: ")
 #print("Bienvenido. Este programa te calculara parámetros de reactividad\n")
 #print('HARTRESS')
 
-ht = input("Hartress: ")
-ht0 = input("Hartress 0: ")
-ht1p = input("Hartress +1: ")
-ht1m = input("Hartress -1: ")
-st.button('hola')
+#ht = input("Hartress: ")
+#ht0 = input("Hartress 0: ")
+#ht1p = input("Hartress +1: ")
+#ht1m = input("Hartress -1: ")
+#st.button('hola')
 
 
 #if next == true:
