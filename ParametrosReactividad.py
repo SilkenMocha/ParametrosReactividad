@@ -25,7 +25,7 @@ if st.button('Calcular'):
   
   kcal = str(ht*627.5)
 
-  A = eV0-eVm
+  A = eV0-eV1m
   I = eVp - eV0
 
   n = (I-A)/2
