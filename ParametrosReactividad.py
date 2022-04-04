@@ -5,7 +5,7 @@ import math
 st.title("Parámetros de reactividad")
 
 st.write("Bienvenido. Este programa te calculara parámetros de reactividad")
-
+st.button('hola')
 st.subheader('Hartress')
 ht = st.text_input("Hartress: ")
 ht0 = st.text_input("Hartress 0: ")
