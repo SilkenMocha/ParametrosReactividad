@@ -24,12 +24,11 @@ ht0 = input("Hartress 0: ")
 ht1p = input("Hartress +1: ")
 ht1m = input("Hartress -1: ")
 st.button('hola')
-next = st.button('Siguiente')
 
 if st.button('Calcular'):
     eV0 = float(ht0)* 27.2116
     eVp = float(ht1p) * 27.2116
-    #eVm = float(ht1m) * 27.2116
+    eVm = float(ht1m) * 27.2116
     eV()
 #if next == true:
  #  eV0 = float(ht0) * 27.2116
