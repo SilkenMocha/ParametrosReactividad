@@ -26,7 +26,7 @@ ht1m = input("Hartress -1: ")
 
 next = st.button("Siguiente")
 
-if next = true:
+if next == true:
    eV0 = float(ht0) * 27.2116
    eVp = float(ht1p) * 27.2116
    eVm = float(ht1m) * 27.2116
