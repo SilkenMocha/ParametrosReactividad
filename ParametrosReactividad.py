@@ -20,17 +20,17 @@ lumo_o = st.number_input("LUMO (V): ")
 
 if st.button('Calcular'):
   eV0 = ht0 * 27.2116
-  eVp = ht1p * 27.2116
-  eVm = ht1m * 27.2116
+  eV1p = ht1p * 27.2116
+  eV1m = ht1m * 27.2116
   
   kcal = str(ht*627.5)
 
-  A = eV0-eVm
-  I = eVp - eV0
+  A = eV0-eV1m
+  I = eV1p - eV0
 
-  n = (I-A)/2
-  u = (I+A)/2
-  w = (u*u)/(2*n)
+  n_aproxE = (I-A)/2
+  u_aproxE = (I+A)/2
+  w_aproxE = pow(u_aproxE,2)/(2*n)
 
 
   col1, col2, col3, col4 = st.columns(4)
@@ -51,9 +51,9 @@ if st.button('Calcular'):
   col2.metric(label="Potencial de ionización", value=str(I))
 
   col1, col2, col3 = st.columns(3)
-  col1.metric(label="Dureza", value=str(n))
-  col2.metric(label="Electronegatividad", value=str(u))
-  col3.metric(label="Electrofilicidad", value=str(w))
+  col1.metric(label="Dureza", value=str(n_aproxE))
+  col2.metric(label="Electronegatividad", value=str(u_aproxE))
+  col3.metric(label="Electrofilicidad", value=str(w_aproxE))
 
   st.subheader("Aproximación Orbital")
 
