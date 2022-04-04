@@ -30,7 +30,7 @@ if st.button('Calcular'):
 
   n_aproxE = (I-A)/2
   u_aproxE = (I+A)/2
-  w_aproxE = pow(u_aproxE, 2)/(2*n)
+  w_aproxE = (u_aproxE** 2)/(2*n)
 
 
   col1, col2, col3, col4 = st.columns(4)
