@@ -57,8 +57,8 @@ if st.button('Calcular'):
 
   st.subheader("Aproximación Orbital")
 
-  A_orb = -27*e_lumo
-  I_orb = -27*e_homo
+  A_orb = -27*lumo
+  I_orb = -27*homo
 
   n_orb = (I - A) / 2
   u_orb = (I + A) / 2
