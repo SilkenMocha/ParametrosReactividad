@@ -51,9 +51,9 @@ if st.button('Calcular'):
   col2.metric(label="Potencial de ionización", value=str(I))
 
   col1, col2, col3 = st.columns(3)
-  col1.metric(label="Dureza", value=str(n_aproxE))
-  col2.metric(label="Electronegatividad", value=str(u_aproxE))
-  col3.metric(label="Electrofilicidad", value=str(w_aproxE))
+  col1.metric(label="Dureza", value=str(n))
+  col2.metric(label="Electronegatividad", value=str(u))
+  col3.metric(label="Electrofilicidad", value=str(w))
 
   st.subheader("Aproximación Orbital")
 
