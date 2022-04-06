@@ -60,8 +60,8 @@ if st.button('Calcular'):
   A_orb = -27*lumo
   I_orb = -27*homo
 
-  n_orb = (I - A) / 2
-  u_orb = (I + A) / 2
+  n_orb = (I_orb - A_orb) / 2
+  u_orb = (I_orb + A_orb) / 2
   w_orb = pow(u, 2) / (2 * n)
   
   col1, col2 = st.columns(2)
