@@ -28,9 +28,9 @@ if st.button('Calcular'):
   A = eV0-eV1m
   I = eV1p - eV0
 
-  n_aproxE = (I-A)/2
-  u_aproxE = (I+A)/2
-  w_aproxE = u_aproxE** 2/(2*n)
+  n = (I-A)/2
+  u = (I+A)/2
+  w = pow(u,2)/(2*n)
 
 
   col1, col2, col3, col4 = st.columns(4)
