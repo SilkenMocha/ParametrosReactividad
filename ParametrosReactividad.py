@@ -7,10 +7,12 @@ st.title("Parámetros de reactividad")
 st.write("Bienvenido. Este programa te calculara parámetros de reactividad")
 
 
-molecula=st.button("Visualización molecualar")
-st.image("https://us.123rf.com/450wm/petarg/petarg1304/petarg130400004/18850224-el-etanol-pelota-y-modelo-de-varilla-tambi%C3%A9n-conocido-como-alcohol-et%C3%ADlico-o-alcohol-de-bebida-es-el.jpg?ver=6")
+reactividad=st.button("Parametros de reactividad")
 
-with st.form(key='calc_react'):
+if reactividad:
+  with st.form(key='calc_react'):
+
+
   st.subheader('Hartress')
   ht = st.number_input("Hartress: ")
   ht0 = st.number_input("Hartress 0: ")
@@ -23,8 +25,7 @@ with st.form(key='calc_react'):
   lumo_o = st.number_input("LUMO (V): ")
 
   calcular = st.form_submit_button('Calcular')
-
-if calcular:
+  if calcular:
   eV0 = ht0 * 27.2116
   eV1p = ht1p * 27.2116
   eV1m = ht1m * 27.2116
@@ -85,3 +86,5 @@ if calcular:
   col1, col2 = st.columns(2)
   col1.metric(label="GAP", value=str(gap))
   col2.metric(label="GAP (eV", value=str(gap_eV))
+
+
