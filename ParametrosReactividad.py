@@ -63,8 +63,8 @@ if calcular:
 
   st.subheader("Aproximación Orbital")
 
-  A_orb = -27*st.session_state.lumo
-  I_orb = -27*st.session_state.homo
+  A_orb = -27*lumo
+  I_orb = -27*homo
 
   n_orb = (I_orb - A_orb) / 2
   u_orb = (I_orb + A_orb) / 2
@@ -79,7 +79,7 @@ if calcular:
   col2.metric(label="Electronegatividad", value=str(u_orb))
   col3.metric(label="Electrofilicidad", value=str(w_orb))
 
-  gap = st.session_state.lumo_o - st.session_state.homo_o
+  gap = lumo_o - homo_o
   gap_eV = gap*27.2116
   
   col1, col2 = st.columns(2)
