@@ -87,7 +87,7 @@ if reactividad:
     col1.metric(label="GAP", value=str(gap))
     col2.metric(label="GAP (eV", value=str(gap_eV))
 
-    st.stop()
+  st.stop()
 
 
 
