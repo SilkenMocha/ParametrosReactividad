@@ -6,10 +6,9 @@ st.title("Parámetros de reactividad")
 
 st.write("Bienvenido. Este programa te calculara parámetros de reactividad")
 
+seleccion = st.selectbox("Seleccione una opción: ", ["Reactividad", "Visualizacion"])
 
-reactividad=st.button("Parametros de reactividad")
-
-if reactividad:
+if seleccion == Reactividad:
   with st.form(key='calc_react'):
     st.subheader('Hartress')
     ht = st.number_input("Hartress: ")
@@ -87,7 +86,6 @@ if reactividad:
     col1.metric(label="GAP", value=str(gap))
     col2.metric(label="GAP (eV", value=str(gap_eV))
 
-  st.stop()
 
 
 
