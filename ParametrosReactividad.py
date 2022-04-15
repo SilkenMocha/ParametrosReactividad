@@ -9,7 +9,7 @@ st.write("Bienvenido. Este programa te calculara parámetros de reactividad")
 
 reactividad=st.button("Parametros de reactividad")
 
-with reactividad:
+if reactividad:
   with st.form(key='calc_react'):
     st.subheader('Hartress')
     ht = st.number_input("Hartress: ")
