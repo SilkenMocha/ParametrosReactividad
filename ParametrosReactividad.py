@@ -8,7 +8,7 @@ st.write("Bienvenido. Este programa te calculara parámetros de reactividad")
 
 seleccion = st.selectbox("Seleccione una opción: ", ["Reactividad", "Visualizacion"])
 
-if seleccion == Reactividad:
+if seleccion == "Reactividad":
   with st.form(key='calc_react'):
     st.subheader('Hartress')
     ht = st.number_input("Hartress: ")
