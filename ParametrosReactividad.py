@@ -30,7 +30,7 @@ if seleccion == "Reactividad":
     eV1p = ht1p * 27.2116
     eV1m = ht1m * 27.2116
   
-    kcal = str(ht*627.5)
+    kcal = ht*627.5
 
     A = eV0-eV1m
     I = eV1p - eV0
@@ -42,7 +42,7 @@ if seleccion == "Reactividad":
 
     col1, col2 = st.columns(2)
     col1.metric(label="H 0", value=round(ht0,5))
-    col2.metric(label="kCal/mol", value=round(kcal,5))
+    col2.metric(label="kCal/mol", value=str(round(kcal,5)))
 
     col1, col2 = st.columns(2)
     col1.metric(label="H -1", value=round(ht1m,5))
