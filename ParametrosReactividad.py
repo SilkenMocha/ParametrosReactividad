@@ -69,7 +69,7 @@ if seleccion == "Reactividad":
 
     n_orb = (I_orb - A_orb) / 2
     u_orb = (I_orb + A_orb) / 2
-    w_orb = pow(u, 2) / (2 * n)
+    w_orb = pow(u_orb, 2) / (2 * n_orb)
   
     col1, col2 = st.columns(2)
     col1.metric(label="Afinidad electrónica", value=str(round(A_orb,5)))
