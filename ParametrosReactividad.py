@@ -11,16 +11,16 @@ seleccion = st.selectbox("Seleccione una opción: ", ["Reactividad", "Visualizac
 if seleccion == "Reactividad":
   with st.form(key='calc_react'):
     st.subheader('Hartress')
-    ht = st.number_input("Hartress: ", format="%.4f")
-    ht0 = st.number_input("Hartress 0: ", format="%.4f")
-    ht1p = st.number_input("Hartress +1: ", format="%.4f")
-    ht1m = st.number_input("Hartress -1: ", format="%.4f")
+    ht = st.number_input("Hartress: ", format="%.4f", step=1e-4)
+    ht0 = st.number_input("Hartress 0: ", format="%.4f", step=1e-4)
+    ht1p = st.number_input("Hartress +1: ", format="%.4f", step=1e-4)
+    ht1m = st.number_input("Hartress -1: ", format="%.4f", step=1e-4)
     st.subheader('Nucleofilicidad')
     st.subheader('Nucleofilicidad')
-    homo = st.number_input("HOMO:", format="%.4f")
-    lumo = st.number_input("LUMO: ", format="%.4f")
-    homo_o = st.number_input("HOMO (O):", format="%.4f")
-    lumo_o = st.number_input("LUMO (V): ", format="%.4f")
+    homo = st.number_input("HOMO:", format="%.4f", step=1e-4)
+    lumo = st.number_input("LUMO: ", format="%.4f", step=1e-4)
+    homo_o = st.number_input("HOMO (O):", format="%.4f", step=1e-4)
+    lumo_o = st.number_input("LUMO (V): ", format="%.4f", step=1e-4)
 
     calcular = st.form_submit_button('Calcular')
  
