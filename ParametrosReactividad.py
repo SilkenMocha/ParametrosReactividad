@@ -40,11 +40,14 @@ if seleccion == "Reactividad":
     w = (pow(u,2))/(2*n)
 
 
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2 = st.columns(2)
     col1.metric(label="H 0", value=round(ht0,5))
-    col2.metric(label="H -1", value=round(ht1m,5))
-    col3.metric(label="H +1", value=round(ht1p,5))
-    col4.metric(label="kCal/mol", value=kcal)
+    col2.metric(label="kCal/mol", value=kcal)
+
+    col1, col2 = st.columns(2)
+    col1.metric(label="H -1", value=round(ht1m,5))
+    col2.metric(label="H +1", value=round(ht1p,5))
+
 
     col1, col2, col3 = st.columns(3)
     col1.metric(label="eV 0", value=str(round(eV0,5)))
