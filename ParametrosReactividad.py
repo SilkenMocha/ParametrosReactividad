@@ -37,7 +37,7 @@ if seleccion == "Reactividad":
 
     n = (I-A)/2
     u = (I+A)/2
-    w = pow(u,2)/(2*n)
+    w = (pow(u,2))/(2*n)
 
 
     col1, col2, col3, col4 = st.columns(4)
