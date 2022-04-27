@@ -58,7 +58,7 @@ if seleccion == "Reactividad":
     col2.metric(label="Potencial de ionización", value=str(round(I,5)))
 
     col1, col2, col3 = st.columns(3)
-    col1.metric(label="Dureza", value=str(n))
+    col1.metric(label="Dureza", value=str(round(n,5)))
     col2.metric(label="Electronegatividad", value=str(round(u,5)))
     col3.metric(label="Electrofilicidad", value=str(round(w,5)))
 
