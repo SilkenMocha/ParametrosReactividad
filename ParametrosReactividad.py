@@ -41,26 +41,26 @@ if seleccion == "Reactividad":
 
 
     col1, col2, col3, col4 = st.columns(4)
-    col1.metric(label="H 0", value=ht0)
-    col2.metric(label="H -1", value=ht1m)
-    col3.metric(label="H +1", value=ht1p)
-    col4.metric(label="kCal/mol", value=kcal)
+    col1.metric(label="H 0", value=round(ht0,4))
+    col2.metric(label="H -1", value=round(ht1m,4))
+    col3.metric(label="H +1", value=round(ht1p,4))
+    col4.metric(label="kCal/mol", value=round(kcal,4))
 
     col1, col2, col3 = st.columns(3)
-    col1.metric(label="eV 0", value=str(eV0))
-    col2.metric(label="eV -1", value=str(eV1p))
-    col3.metric(label="eV +1", value=str(eV1m))
+    col1.metric(label="eV 0", value=str(round(eV0,4)))
+    col2.metric(label="eV -1", value=str(round(eV1p,)))
+    col3.metric(label="eV +1", value=str(round(eV1m,4)))
   
     st.subheader("Aproximación de energias")
 
     col1, col2 = st.columns(2)
-    col1.metric(label="Afinidad electrónica", value=str(A))
-    col2.metric(label="Potencial de ionización", value=str(I))
+    col1.metric(label="Afinidad electrónica", value=str(round(A,4)))
+    col2.metric(label="Potencial de ionización", value=str(round(I,4)))
 
     col1, col2, col3 = st.columns(3)
     col1.metric(label="Dureza", value=str(n))
-    col2.metric(label="Electronegatividad", value=str(u))
-    col3.metric(label="Electrofilicidad", value=str(w))
+    col2.metric(label="Electronegatividad", value=str(round(u,4)))
+    col3.metric(label="Electrofilicidad", value=str(round(w,4)))
 
     st.subheader("Aproximación Orbital")
 
@@ -72,20 +72,20 @@ if seleccion == "Reactividad":
     w_orb = pow(u, 2) / (2 * n)
   
     col1, col2 = st.columns(2)
-    col1.metric(label="Afinidad electrónica", value=str(A_orb))
-    col2.metric(label="Potencial de ionización", value=str(I_orb))
+    col1.metric(label="Afinidad electrónica", value=str(round(A_orb,4)))
+    col2.metric(label="Potencial de ionización", value=str(round(I_orb,4)))
 
     col1, col2, col3 = st.columns(3)
-    col1.metric(label="Dureza", value=str(n_orb))
-    col2.metric(label="Electronegatividad", value=str(u_orb))
-    col3.metric(label="Electrofilicidad", value=str(w_orb))
+    col1.metric(label="Dureza", value=str(round(n_orb,4)))
+    col2.metric(label="Electronegatividad", value=str(round(u_orb,4)))
+    col3.metric(label="Electrofilicidad", value=str(round(w_orb,4)))
 
     gap = lumo_o - homo_o
     gap_eV = gap*27.2116
   
     col1, col2 = st.columns(2)
-    col1.metric(label="GAP", value=str(gap))
-    col2.metric(label="GAP (eV", value=str(gap_eV))
+    col1.metric(label="GAP", value=str(round(gap,4)))
+    col2.metric(label="GAP (eV", value=str(round(gap_eV,4)))
 
 
 
