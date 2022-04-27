@@ -42,7 +42,7 @@ if seleccion == "Reactividad":
 
     col1, col2 = st.columns(2)
     col1.metric(label="H 0", value=round(ht0,5))
-    col2.metric(label="kCal/mol", value=kcal)
+    col2.metric(label="kCal/mol", value=round(kcal,5))
 
     col1, col2 = st.columns(2)
     col1.metric(label="H -1", value=round(ht1m,5))
